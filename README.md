@@ -1,2 +1,6 @@
-# epd
-Elementary Program Design
+## Python으로 배우는
+### 프로그래밍의 원리
+
+### 실습문제 자동채점 프로그램
+
+
