@@ -3,6 +3,7 @@
 위 책을 공부하는데 필요한 저자 강의 영상 및 학습 자료를 모아놓은 곳입니다.
 
 #### 학습 자료
+- [강의 동영상](https://youtube.com/playlist?list=PL0UNsS2daHTyoDTctKpITfbW1UtR5ig6L)
 - [강의 슬라이드 자료](https://github.com/Doggzone/pppython/tree/master/slide)
 - [소스코드](https://github.com/Doggzone/pppython/tree/master/code)
 - [문제 해답](https://github.com/Doggzone/pppython/tree/master/solution)
