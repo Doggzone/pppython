@@ -1,4 +1,4 @@
-설계 원리를 중심으로 배우는 프로그래밍의 정석 : 파이썬 (도경구 지음, 생능출판사 펴냄)
+제어 구조의 설계 원리를 중심으로 배우는 프로그래밍의 정석 : 파이썬 (도경구 지음, 생능출판사 펴냄)
 
 #### 학습 자료
 - [강의 동영상](https://youtube.com/playlist?list=PL0UNsS2daHTyoDTctKpITfbW1UtR5ig6L)
