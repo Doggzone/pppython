@@ -160,14 +160,11 @@ def run_minbags(n):
 
 # 표채워풀기 버전
 def minbags(n):
-    bags = [0,0,1,1,2,1,2]
-    if n > 6:
-        i = 7
-        while i <= n:
-            smallest = min(bags[i-2], bags[i-3], bags[i-5])
-            bags.append(smallest+1)
-            i += 1
-    return bags[n]
+    table = [0,0,1,1,2,1,2] # 0 <= n <= 6
+    for i in range(7,n+1):
+        smallest = min(table[i-2], table[i-3], table[i-5])
+        table.append(smallest + 1)
+    return table[n]
 
 # # Test code
 # for i in range(36,51):
@@ -177,51 +174,16 @@ def minbags(n):
 ### 7.2 - 달나라 토끼를 위한 구매대금 지불 도우미 (p.364-366)
 
 # 표채워풀기 버전
-def change(total):
-    # coin = 1, 2, 5, 7
-    counts = [0] * (total + 1)
-    counts[1] = 1
-    for n in range(2,total+1):
-        if 2 <= n < 5:
-            coins = [2]
-        elif 5 <= n < 7:
-            coins = [2,5]
-        else:
-            coins = [2,5,7] 
-        minimum = counts[n-1] + 1
-        for coin in coins:
-            minimum = min(minimum,counts[n-coin]+1)
-        counts[n] = minimum
-    return counts[total]
+def change(n):
+    table = [0,1,1,2,2,1,2,1] # 0 <= n <= 7
+    for i in range(8,n+1):
+        smallest = min(table[i-1],table[i-2],table[i-5],table[i-7])
+        table.append(smallest + 1)
+    return table[n]
 
 # # Test code
-# print(change(1))  # 1
-# print(change(2))  # 1
-# print(change(3))  # 2
-# print(change(4))  # 2
-# print(change(5))  # 1
-# print(change(6))  # 2
-# print(change(7))  # 1
-# print(change(8))  # 2
-# print(change(9))  # 2
-# print(change(10)) # 2
-# print(change(11)) # 3
-# print(change(12)) # 2
-# print(change(13)) # 3
-# print(change(14)) # 2
-# print(change(15)) # 3
-# print(change(16)) # 3
-# print(change(17)) # 3
-# print(change(18)) # 4
-# print(change(19)) # 3
-# print(change(20)) # 4
-# print(change(21)) # 3
-# print(change(22)) # 4
-# print(change(23)) # 4
-# print(change(24)) # 4
-# print(change(25)) # 5
-# print(change(26)) # 4
-# print(change(27)) # 5
-# print(change(28)) # 4
+# for i in range(1,29):
+#     print(i, change(i))
+
 
 
